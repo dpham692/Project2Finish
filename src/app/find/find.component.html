@@ -1,0 +1,21 @@
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<div class="container">
+<h2>Input Trade Credentials Here:</h2>
+<form class="forms" action="/#" method="POST">
+<label for="username">Trader Username</label><br>
+<input type="text" name="username" [(ngModel)]="user.username" placeholder="Enter Username"><br>
+<label for="password">Password</label><br>
+<input type="password" name="password" [(ngModel)]="user.password" placeholder="Enter Password"><br><br>
+<input type="submit" id="submitBtn" (click)="findUser()" value="Enter Trader Port">
+</form>
+<div *ngIf="userData">
+  {{ userData.username }}
+</div>
+<div *ngIf="!userData">
+ {{ clientMessage.message }}
+</div>
+</div>

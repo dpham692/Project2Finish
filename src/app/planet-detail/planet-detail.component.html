@@ -1,0 +1,16 @@
+<div *ngIf="planet" class="details">
+  <div class="detailList"> 
+    <h3>You selected: {{planet.name}}</h3>
+    <h2>Display detail:</h2>
+    <ul>
+      <li>Name: {{planet.name}}</li>
+      <li>Population: {{planet.population}}</li>
+      <li>Rotation Period: {{planet.rotation_period}}</li>
+      <li>Orbital Period: {{planet.orbital_period}}</li>
+      <li>Diameter: {{planet.diameter}}</li>
+      <li>Climate: {{planet.climate}}</li>
+      <li>Terrain: {{planet.terrain}}</li>
+      <li>Gravity: {{planet.gravity}}</li>
+    </ul>
+  </div>
+</div>

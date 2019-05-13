@@ -1,0 +1,12 @@
+.details{
+    position: relative;
+    left: 700px;
+    border: 3px solid yellow;
+    color: white;
+    padding: 0.5em;
+    margin: 1em;
+    overflow:hidden; 
+    overflow-y:scroll;
+    height:200px; 
+    width:65%;
+}

@@ -1,0 +1,15 @@
+<div *ngIf="starship" class="details">
+  <div class="detailList"> 
+    <h3>You selected: {{starship.name}}</h3>
+    <h2>Display detail:</h2>
+    <ul>
+      <li>Name: {{starship.name}}</li>
+      <li>Model: {{starship.model}}</li>
+      <li>Manufacturer: {{starship.manufacturer}}</li>
+      <li>Cost: {{starship.cost_in_credits}}</li>
+      <li>Cargo Capacity: {{starship.cargo_capacity}}</li>
+      <li>Passengers hold: {{starship.passengers}}</li>
+      <li>Consumables: {{starship.consumables}}</li>
+    </ul>
+  </div>
+</div>

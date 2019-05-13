@@ -1,0 +1,116 @@
+
+<div class="container">
+<h1>Information Page</h1>
+_/﹋\_ <br>
+(҂`_´) <br>
+,︻╦╤─ ҉ - - <br>
+_/﹋\_<br>
+<div>
+  <button class="btn btn-primary btn-center" (click)="findAllPeople()">GET RANDOM PEOPLE</button>
+</div>
+  <h2>PEOPLE INFORMATION DISPLAY</h2>
+  <!-- <div class="parent">
+    <ul class ="peoples"> 
+      <li class="peopleList" *ngIf="peoples" [class.selected]="eachPeople === selectedPeople" (click)="onSelect(eachPeople)">
+        Name: {{ peoples.name }} <br>
+        Height: {{ peoples.height }} <br>
+        Mass: {{ peoples.mass }} <br>
+         Gender: {{ peoples.gender }} <br>
+         Hair Color: {{ peoples.hair_color }} <br>
+        Skin Color: {{ peoples.skin_color }} <br>
+         Eye Color: {{ peoples.eye_color }} <br>
+        Birth Year: {{ peoples.birth_year}} <br>
+      </li> 
+  </ul>
+  <app-people-detail [people]=selectedPeople></app-people-detail>
+  </div> -->
+  <div class="peoples">
+  <div *ngIf="peoples">
+   Name: {{ peoples.name | uppercase}} <br>
+   Height: {{ peoples.height | uppercase}} <br>
+   Mass: {{ peoples.mass | uppercase}} <br>
+   Gender: {{ peoples.gender | uppercase}} <br>
+   Hair Color: {{ peoples.hair_color | uppercase}} <br>
+   Skin Color: {{ peoples.skin_color | uppercase}} <br>
+   Eye Color: {{ peoples.eye_color | uppercase}} <br>
+   Birth Year: {{ peoples.birth_year | uppercase}} <br>
+</div>
+  </div>
+<div *ngIf="!peoples">
+   {{ clientMessage.message }}
+</div>  <pre>
+       .__ .   .__..  ..___.___.
+    [__)|   [__]|\ |[__   |  
+    |   |___|  || \|[___  |  
+                                                                                    
+</pre>
+<div>
+  <button class="btn btn-primary btn-center" (click)="findAllPlanet()">GET RANDOM PLANET</button>
+</div>
+  <h2>PLANET INFORMATION DISPLAY</h2>
+  <!-- <div class="parent">
+      <ul class ="planets"> 
+        <li class="planetList" *ngFor="let eachPlanet of planets" [class.selected]="eachPlanet === selectedPlanet" (click)="onSelect2(eachPlanet)">
+         Name: {{eachPlanet.name}} <br>
+        </li>
+    </ul>
+    <app-planet-detail [planet]=selectedPlanet></app-planet-detail>
+    </div> -->
+    <div class="planets">
+      <div *ngIf="planets">
+       Name: {{ planets.name | uppercase}} <br>
+       Diamter: {{ planets.diamters | uppercase}} <br>
+       Climate: {{ planets.climate | uppercase}} <br>
+       Gravity: {{ planets.gravity | uppercase}} <br>
+       Terrain: {{ planets.terrain | uppercase}} <br>
+       Population: {{ planets.population | uppercase}} <br>
+       Rotation Period: {{ planets.rotation_period | uppercase}} <br>
+       Orbital Period: {{ planets.orbital_period | uppercase}} <br>
+       Surface Water: {{ planets.surface_water | uppercase}} <br>
+    </div>
+      </div>
+    <div *ngIf="!planets">
+       {{ clientMessage.message }}
+    </div>
+    <pre>
+__
+| \
+          =[_|H)--._____
+          =[+--,-------'
+          [|_/""     
+     
+    </pre>
+    <div>
+      <button class="btn btn-primary btn-center" (click)="findAllStarship()">GET RANDOM STARSHIP</button>
+    </div>
+    <h2>STARSHIP INFORMATION DISPLAY</h2>
+    <!-- <div class="parent">
+   
+      <ul class ="starships"> 
+        <li class="starshipList" *ngFor="let eachStarship of starships" [class.selected]="eachStarship === selectedStarship" (click)="onSelect3(eachStarship)">
+         Name: {{eachStarship.name}} <br>
+        </li>
+    </ul>
+    <app-starship-detail [starship]=selectedStarship></app-starship-detail>
+    </div>
+</div> -->
+<div class="starships">
+  <div *ngIf="starships">
+   Name: {{ starships.name | uppercase}} <br>
+   Model: {{ starships.model | uppercase}} <br>
+   Manufacturer: {{ starships.manufacturer | uppercase}} <br>
+   Starships: {{ starships.length | uppercase}} <br>
+   Crew: {{ starships.crew | uppercase}} <br>
+   Passengers: {{ starships.passengers | uppercase}} <br>
+   Consumables: {{ starships.consumables | uppercase}} <br>
+   MGLT: {{ starships.MGLT | uppercase}} <br>
+   Cost: {{ starships.cost_in_credits | uppercase}} <br>
+   Max Speed: {{ starships.max_atmosphering_speed | uppercase}} <br>
+   Cargo Capacity: {{ starships.cargo_capacity | uppercase}} <br>
+   Hyperdrive Rating: {{ starships.hyperdrive_rating | uppercase}} <br>
+   Starship Class: {{ starships.starship_class | uppercase}} <br>
+</div>
+  </div>
+<div *ngIf="!starships">
+   {{ clientMessage.message }}
+</div>

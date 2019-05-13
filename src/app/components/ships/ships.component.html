@@ -1,0 +1,40 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Destinations
+  </h1>
+</div>
+<div class="container">
+<h2>Planets Visiting:</h2>
+<h2>{{planet.name | uppercase}} Details</h2>
+<div><span>id: </span>{{planet.id}}</div>
+<div><span>planet: </span>{{planet.name}}</div>
+
+<h2>Compatible Ships</h2>
+<ul class="ships">
+  <li *ngFor="let ship of ships"
+    [class.selected]="ship === selectedShip"
+    (click)="onSelect(ship)">
+    <span class="badge">{{ship.id}}</span> {{ship.name}}
+  </li>
+</ul>
+ 
+<div *ngIf="selectedShip">
+ 
+  <h2>{{selectedShip.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{selectedShip.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="selectedShip.name" placeholder="name"/>
+    </label>
+  </div>
+ 
+</div>
+<form class="forms" action="/#">
+  <label for="planet">Next Planet</label><br>
+  <input type="text" name="planet" placeholder="Enter Next Planet"><br>
+  <label for="ship">Select Compatible Ship</label><br>
+  <input type="text" name="ship" placeholder="Enter Ship Name"><br><br>
+  <input type="submit" id="submitBtn" value="Find Navigation">
+</form>
+</div>

@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+h1 {
+    background-color: black;
+    color: rgb(247, 247, 12);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 250%;
+}
+h2, h3 {
+    color: lightskyblue;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+body {
+    margin: 2%;
+}
+body, input[type="text"], button {
+    color: rgb(250, 246, 246);
+    font-family: Cambria, Georgia;
+}
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: rgb(241, 240, 240);
+}
+#submitBtn {
+    background-color: rgb(102, 93, 93);
+    color: rgb(241, 240, 240);
+    font-size: 150%;
+}
+.container {
+    text-align: center;
+    margin: auto;
+}
+a:link, a:visited {
+    background-color: rgb(102, 93, 93);
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+a:hover {
+    background-color: rgb(80, 72, 72);
+    text-decoration: none;
+}
+li, ul, a {
+    list-style-type: none;
+    margin-left: -10px;
+}
+input[type=text], input[type=password], select, textarea {
+    width: 20%;
+    padding: 12px;
+    border: 1px solid rgb(247, 247, 12);
+    border-radius: 4px;
+    resize: vertical;
+    background-color: rgb(240, 233, 233);
+    color: black;
+  }

@@ -1,0 +1,101 @@
+.peoples{
+    position: relative;
+    left: 700px;
+    border: 3px solid yellow;
+    color: black;
+    background: black;
+    padding: 0.5em;
+    margin: 1em;
+    overflow:hidden; 
+    overflow-y:scroll;
+    height:200px; 
+    width:20%;
+
+}
+.peoples .peopleList{
+    max-height: 5 em;
+    font-size: 0.875em;
+    color: black;
+    font-family: Georgia, serif;
+    background: #cce5ff;
+    padding: 0.5em;
+    margin: 0.2em;
+    text-align: left;
+
+}
+.planets{
+    position: relative;
+    left: 700px;
+    border: 3px solid yellow;
+    color: black;
+    background: black;
+    padding: 0.5em;
+    margin: 1em;
+    overflow:hidden; 
+    overflow-y:scroll;
+    height:200px; 
+    width:20%;
+
+}
+.planets .planetList{
+    max-height: 5 em;
+    font-size: 0.875em;
+    color: black;
+    font-family: Georgia, serif;
+    background: #cce5ff;
+    padding: 0.5em;
+    margin: 0.2em;
+    text-align: left;
+
+}
+.starships{
+    position: relative;
+    left: 700px;
+    border: 3px solid yellow;
+    color: black;
+    background: black;
+    padding: 0.5em;
+    margin: 1em;
+    overflow:hidden; 
+    overflow-y:scroll;
+    height:200px; 
+    width:20%;
+
+}
+.starships .starshipList{
+    max-height: 5 em;
+    font-size: 0.875em;
+    color: black;
+    font-family: Georgia, serif;
+    background: #cce5ff;
+    padding: 0.5em;
+    margin: 0.2em;
+    text-align: left;
+
+}
+.selected{
+    background: mediumaquamarine !important;
+    color: white !important;
+}
+.details{
+    position: relative;
+    left: 700px;
+    border: 3px solid yellow;
+    color: white;
+    padding: 0.5em;
+    margin: 1em;
+    overflow:hidden; 
+    overflow-y:scroll;
+    height:200px; 
+    width:30%;
+}
+.parent{
+    display:flex;
+}
+.info{
+    font-size: 2em;
+}
+.ascii-art {
+    font-family: monospace;
+    white-space: pre;
+}
